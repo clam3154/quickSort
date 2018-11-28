@@ -1,4 +1,4 @@
-public class quick_Sort
+public class quickSort
 {
     public static void quickSort(int[] arr, int left, int right)
     {
