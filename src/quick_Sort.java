@@ -1,6 +1,6 @@
-public class quickSort
+public class quick_Sort
 {
-    public void quickSort(int[] arr, int left, int right)
+    public static void quickSort(int[] arr, int left, int right)
     {
         if(left<right)
         {
@@ -8,9 +8,14 @@ public class quickSort
             quickSort(arr,left,pivot-1);
             quickSort(arr,pivot+1,right);
         }
+        for(int i = 0; i<arr.length; i++)
+        {
+            System.out.print(arr[i] + ",");
+        }
+        System.out.println();
     }
 
-    public int partition(int[] arr, int left, int right)
+    public static int partition(int[] arr, int left, int right)
     {
         int temp;
         int pivot = arr[right];
